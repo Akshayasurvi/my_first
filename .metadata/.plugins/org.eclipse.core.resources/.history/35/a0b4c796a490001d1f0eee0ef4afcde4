@@ -1,0 +1,25 @@
+package collectionDemo;
+import java.util.*;
+
+public class setDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set s=new HashSet();
+		s.add("toy car");
+		s.add("teddy bear");
+		s.add("toy bus");
+		s.add("guitar");
+		s.add("crayons");
+		s.add("candies");
+		s.add("toy bus");
+		System.out.println(s);
+		System.out.println(s.remove("guitar"));
+		if(s.contains("teddy bear")){
+			System.out.println("set contains teddybear");
+		}
+		
+
+	}
+
+}

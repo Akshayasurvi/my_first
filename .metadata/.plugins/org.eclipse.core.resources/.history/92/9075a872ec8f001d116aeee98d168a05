@@ -1,0 +1,21 @@
+package threadapp;
+
+public class twoThreads extends Thread{
+	char c;
+	public void run(){
+		for(c='A';c<='Z';++c){
+			System.out.println(Thread.currentThread().getName()+c);
+		}
+	}
+	public static void main(String[] args){
+		twoThreads t1=new twoThreads();
+		twoThreads t2=new twoThreads();
+		t1.setPriority(7);
+		t1.start();
+		t1.yield();
+		t2.setPriority(8);
+		t2.start();
+	}
+	
+
+}

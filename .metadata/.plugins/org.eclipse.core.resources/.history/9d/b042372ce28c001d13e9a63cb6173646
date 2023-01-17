@@ -1,0 +1,14 @@
+package string;
+
+public class stringgBuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-genera ted method stub
+		StringBuilder b=new StringBuilder();
+		b.append("Hello people!");
+		b.append("This is a StringBuilder text");
+		System.out.println(b);
+
+	}
+
+}

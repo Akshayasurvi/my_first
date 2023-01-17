@@ -1,0 +1,9 @@
+package abstractt;
+
+public class chair extends Furniture{
+	public void setStructue(){
+		System.out.println("akk");
+	}
+	
+
+}

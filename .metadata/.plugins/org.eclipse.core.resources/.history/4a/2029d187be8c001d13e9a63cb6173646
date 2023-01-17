@@ -1,0 +1,17 @@
+package statiC;
+
+public class count {
+	static int a=0;
+	static void count0bj(){
+		a++;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		count a1=new count();
+		count a2=new count();
+		System.out.println(countObj.a);
+
+	}
+
+}

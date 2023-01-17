@@ -1,0 +1,28 @@
+package collectionDemo;
+import java.util.*;
+
+public class mapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map m=new HashMap();
+		m.put("EOO1", "Peter");
+		m.put("EOO2", "Simond");
+		m.put("EOO3", "Edgar");
+		m.put("EOO4", "Mathew");
+		m.put("EOO5", "Erric");
+		System.out.println(m.get("EOO3"));
+		Set set=m.keySet();
+		for(Object o:set){
+			System.out.println(o+" "+m.get(o));
+		}
+		System.out.println(m);
+		Set s=m.entrySet();
+		for(Object n:s){
+			System.out.println(n);
+		}
+		System.out.println(m);
+
+	}
+
+}

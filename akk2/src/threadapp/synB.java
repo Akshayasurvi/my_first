@@ -1,0 +1,24 @@
+package threadapp;
+
+public class synB implements Runnable{
+	public void run(){
+		synchronized(this){
+			System.out.println(Thread.currentThread().getName());
+			System.out.println("Erric");
+			System.out.println("23 old street");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		synB n=new synB();
+		Thread t1=new Thread(n);
+		Thread t2=new Thread(n);
+		Thread t3=new Thread(n);
+		t1.start();
+		t2.start();
+		t3.start();
+
+	}
+
+}

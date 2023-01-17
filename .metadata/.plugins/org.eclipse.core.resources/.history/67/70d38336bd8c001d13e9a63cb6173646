@@ -1,0 +1,16 @@
+package statiC;
+
+public class count {
+	private static int c;
+	public count(){
+		c++;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		count a=new count();
+		System.out.println(count.c);
+
+	}
+
+}

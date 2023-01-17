@@ -1,0 +1,10 @@
+package InterestCalculator;
+
+public class calculatorApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

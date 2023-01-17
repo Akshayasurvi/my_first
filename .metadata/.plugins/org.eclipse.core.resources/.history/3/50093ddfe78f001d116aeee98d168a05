@@ -1,0 +1,14 @@
+package threadapp;
+
+public class intThread {
+	int i;
+	public void printNum(){
+		for(i=1;i<11;i++){
+			System.out.println(i);
+		}
+	}
+	public void run(){
+		printNum();
+	}
+
+}

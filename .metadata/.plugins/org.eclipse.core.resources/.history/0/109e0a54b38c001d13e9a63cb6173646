@@ -1,0 +1,10 @@
+package ticketBooking;
+
+public class ticketApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

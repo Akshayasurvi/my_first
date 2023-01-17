@@ -1,0 +1,22 @@
+package string;
+
+public class stringgBuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-genera ted method stub
+		StringBuilder b=new StringBuilder();
+		b.append("Hello people!");
+		b.append("This is a StringBuilder text");
+		System.out.println(b);
+		b.insert(13, "Welcome ");
+		System.out.println(b);
+		b.replace(6, 12, "Programmers");
+		System.out.println(b);
+		b.delete(28, 41);
+		System.out.println(b);
+		b.insert(28, "StringBuffer");
+		System.out.println(b);
+
+	}
+
+}

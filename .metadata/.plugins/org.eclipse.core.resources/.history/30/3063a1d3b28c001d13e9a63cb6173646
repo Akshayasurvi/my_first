@@ -1,0 +1,5 @@
+package ticketBooking;
+
+public class conformTicket extends Ticket {
+
+}

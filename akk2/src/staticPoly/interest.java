@@ -1,0 +1,25 @@
+package staticPoly;
+
+public class interest {
+	public void iinterest(float amount){
+		System.out.println(amount);
+		
+	}
+	public void iinterest(float p, float rate, float time){
+		//System.out.println(p + rate + time);
+	}
+	public void iinterest(float p, float total_in){
+		System.out.println( total_in);
+	
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		interest in=new interest();
+		in.iinterest(1200);
+		in.iinterest(3400, 6400);
+		
+
+	}
+
+}

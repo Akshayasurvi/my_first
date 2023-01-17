@@ -1,0 +1,21 @@
+package statiC;
+
+public class Employee {
+	String name;
+	String d;
+	String role;
+	static int id=0;
+	Employee(){
+		id++;
+		System.out.println(id);
+		
+	}
+	public static void main(String[] args){
+		Employee a=new Employee();
+		Employee b=new Employee();
+		//a.count();
+		//System.out.println(id);
+		
+	}
+
+}

@@ -1,0 +1,45 @@
+package iodemo;
+import java.io.*;
+
+public class StudentRecords {
+	public void writeToFile(StudentDetails obj){
+		try{
+			FileOutputStream fout=new FileOutputStream("C://Users//SAKSHAYA//Documents//myDetails.txt");
+			ObjectOutputStream objout=new ObjectOutputStream(fout);
+			objout.writeObject(obj);
+			objout.flush();
+		}
+		catch(FileNotFoundException e){
+			System.out.println(e);
+		}
+		catch(IOException e){
+			System.out.println(e);
+		}
+	}
+	public void readToFile(StudentDetails obj){
+		try{
+			FileInputStream fin=new FileInputStream("C://Users//SAKSHAYA//Documents//myDetails.txt");
+			ObjectInputStream objin=new ObjectInputStream(fin);
+			StudentDetails student=(StudentDetails)objin.readObject();
+			student.printDetails();
+		}
+		catch(FileNotFoundException e){
+			System.out.println(e);
+		}
+		catch(IOException e){
+			System.out.println(e);
+		}
+		catch(ClassNotFoundException e){
+			System.out.println(e);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StudentDetails stud=new StudentDetails("Akshaya",46);
+		StudentRecords records=new StudentRecords();
+		records.writeToFile(stud);
+
+	}
+
+}

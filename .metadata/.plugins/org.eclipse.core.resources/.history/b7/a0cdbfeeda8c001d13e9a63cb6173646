@@ -1,0 +1,15 @@
+package string;
+
+public class opp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="It is raining outsise! Can I have a raincoat please";
+		char[] cstr = s1.toCharArray();
+		for(char c:cstr){
+			System.out.println(c);
+		}
+
+	}
+
+}

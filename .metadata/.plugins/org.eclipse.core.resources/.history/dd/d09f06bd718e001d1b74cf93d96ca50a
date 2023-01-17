@@ -1,0 +1,30 @@
+package iodemo;
+import java.io.*;
+
+public class RandomFileDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try{
+			RandomAccessFile raf=new RandomAccessFile("C://Users//SAKSHAYA//Documents//my file.txt","rw");
+			String[] arr={"apple","banana","mango"};
+			
+			for(int i=0;i<arr.length;i++){
+				//raf.seek(i);
+				raf.writeUTF(arr[i]);
+				/*raf.seek(0);
+				String str=raf.readLine();
+				System.out.println(str);*/
+				
+			}
+			raf.seek(i);
+			raf.seek(2);
+			String str=raf.readLine();
+			System.out.println(str);
+
+	}
+		catch(Exception e){
+			System.out.println(e);
+		}
+
+}}

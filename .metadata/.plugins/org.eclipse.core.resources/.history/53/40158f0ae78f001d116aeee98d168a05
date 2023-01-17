@@ -1,0 +1,15 @@
+package threadapp;
+
+public class charThread extends Thread{
+	char c;
+	public void printChar(){
+		for(c='A';c<='z';++c){
+			System.out.println(c);
+		}
+	}
+	public void run(){
+		printChar();
+		Thread.currentThread().join();
+	}
+
+}
